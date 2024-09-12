@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        body {
+            width: 100vw;
+            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;            
+            display: flex;
+            font-size: large;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .section1 {
+          position: sticky;
+          top: 0%;
+            width: 70%;
+            height: 10rem;
+            background: #4CA1AF;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #4CA1AF, #C4E0E5);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #4CA1AF, #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            border-radius: 4px;
+            display: flex;
+            flex-direction: row;
+            justify-content:start;
+            align-items: center;
+              box-shadow:
+              6.7px 6.7px 5.3px rgba(0, 0, 0, 0.067),
+              22.3px 22.3px 17.9px rgba(0, 0, 0, 0.104),
+              100px 100px 80px rgba(0, 0, 0, 0.18);
+
+        }
+
+
+        .profile-img-section {
+            width: 30%;
+            height: 100%;
+            display: flex ;
+            justify-content:center;
+            align-items: center;
+            
+        }
+
+
+        .profile-data {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+
+        .profile-img {
+            height: 8rem;
+            width: 8rem;
+            border-radius: 50%;
+            background: rgba( 255, 255, 255, 0.15 );
+              box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+              backdrop-filter: blur( 1px );
+              -webkit-backdrop-filter: blur( 1px );
+              border-radius: 50%;
+              border: 1px solid rgba( 255, 255, 255, 0.18 );
+            padding: 0.5;
+        
+        }
+
+
+        .section2 {
+            width: 70%;
+            height: 10rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            font-size: large;
+            font-weight: 400;
+        }
+
+
+        .section3 {
+            width: 70%;
+            height: 12rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+
+        .section4 {
+            width: 70%;
+            height: 13rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+        .section5 {
+            width: 70%;
+            height: 8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+        .section6 {
+            width: 70%;
+            height: 3rem;
+            background: #4CA1AF;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #4CA1AF, #C4E0E5);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #4CA1AF, #C4E0E5);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+
+        }
+        .section7 {
+            width: 70%;
+            height: 10rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+        .section-title {
+            color: #56CCF2;  /* fallback for old browsers */
+            color: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+            color: linear-gradient(to right, #2F80ED, #56CCF2);
+            font-weight: bold;
+            font-size: x-large;
+        }
+          .p-style{
+            color: #0a0f11;  /* fallback for old browsers */
+            color: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+            color: linear-gradient(to right, #2F80ED, #56CCF2);
+            font-weight: bold;
+          }
+
+        .ed-table {
+            width: 100%;
+            border: 1px solid #343333;
+            border-collapse: collapse;
+           
+        }
+        th{
+            height: 30px;
+            /* padding: 1rem; */
+            border: 1px solid #343333;
+            font-size: large;
+        }
+
+        td {
+            /* padding: 1rem; */
+            height: 30px;
+            border: 1px solid #343333;
+            font-size: medium;
+            align-items: center;
+            border-spacing: 2px;
+        }
+        
+
+        .companies {
+            font-weight: bold;
+            color: rgb(44, 52, 49);
+        }
+        .phn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        border: none;
+        background-color:#0c0c0c ;
+        }
+        .phn:hover {
+  background-color: #292b29;
+}
+.git-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.git {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2d2e32;
+  border: 2px solid #2d2e32;
+  transition: all 0.45s;
+}
+
+.git:hover {
+  transform: rotate(360deg);
+  transform-origin: center center;
+  background-color: #ffff;
+  color: #2d2e32;
+}
+
+.git:hover .btn-svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg)
+    brightness(103%) contrast(103%);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar
+{
+	width: 6px;
+  height: 6px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color:  #56CCF2;
+}
+.socialContainer {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 1.2s;
+  border-radius: 15px 0 15px 0px;
+}
+
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 1.2s;
+}
+
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 1.2s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 1.2s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="section1">
+    <div class ="profile-img-section">
+        <img src="img/myim.jpg" alt="harissh" class ="profile-img">
+    </div>
+        <div class="profile-data">
+            <h1>Harissh K S </h1>
+            <h3>harisshks22cse@srishakthi.ac.in</h3>
+        </div>
+
+    </div>
+    <div class="section2">
+        <h1 class="section-title">Objective</h1>
+      
+        <p>
+          Motivated and goal-oriented college student seeking opportunities to apply my skills and knowledge in a dynamic environment. 
+          Eager to contribute to team success through hard work, attention to detail, and a passion for learning.
+          Open to leveraging my problem-solving abilities and technical expertise to grow within a forward-thinking organization
+    </p>
+    </div>
+    <div class="section3">
+            <h1 class="section-title">
+                Education
+            </h1>
+            <table class="ed-table">
+              <tr>
+                  <th>Institution</th>
+                  <th>Qualifications</th>
+                  <th>Year</th>
+              </tr>
+              <tr>
+                  <td>Sri Shakthi Institute of Engineering and Technology</td>
+                  <td>Bachelor of Engineering</td>
+                  <td>2022 - 2026</td>
+              </tr>
+              <tr>
+                  <td>Saraswathi Matric Higher Secondary School</td>
+                  <td>HSC</td>
+                  <td>2020 - 2021</td>
+              </tr>
+              <tr>
+                  <td>Jayam Matric Higher Secondary School</td>
+                  <td>SSLC</td>
+                  <td>2018 - 2019</td>
+              </tr>
+          </table>
+            </div>
+            <div class="section4">
+              <h1 class="section-title">Skills</h1>
+                <li><span class ="companies">Programming Languagues : </span>Java , Kotlin , C </li>
+                <li><span class ="companies">Mobile Development : </span>Android(Java , Kotlin)</li>
+                <li><span class ="companies">Web Development : </span>HTML , CSS</li>
+                <li><span class ="companies">Database : </span>MySQL , MongoDB.</li>
+                <li><span class ="companies">Development Tools : </span>Android Studio , IntelliJ IDEA , Visual Code Studio.</li>
+            </div>
+            <div class="section7">
+              <h1 class ="section-title">Projects</h1>
+                  <p class="p-style">3D-FPS shooting game</p>
+                  <li>Designed an FPS shooting game using C++</li>
+                  <p class="p-style">BB Bakes -A Bakery App</p>
+                  <li>Built a software application to order bakery products using Dart (Flutter)</li>
+                  <p class="p-style">Fake news detection </p>
+                  <li>Built a software program to detect fake news using Python</li>
+                  
+            </div>
+
+    <div class="section5">
+      <h1 class ="section-title">Certificate</h1>
+      <li>NPTEL Certificate - Programming in Java</li>
+   </div>
+    <div class="section6">
+      <a href="tel:+91 9790730924">        
+        <button class="phn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 32 32" height="32" fill="none" class="svg-icon">
+
+            <path stroke-width="2" stroke-linecap="round" stroke="#fff" fill-rule="evenodd" d="m24.8868 19.1288c-1.0274-.1308-2.036-.3815-3.0052-.7467-.7878-.29-1.6724-.1034-2.276.48-.797.8075-2.0493.9936-2.9664.3258-1.4484-1.055-2.7233-2.3295-3.7783-3.7776-.6681-.9168-.4819-2.1691.3255-2.9659.5728-.6019.7584-1.4748.4802-2.2577-.3987-.98875-.6792-2.02109-.8358-3.07557-.2043-1.03534-1.1138-1.7807-2.1694-1.77778h-3.18289c-.60654-.00074-1.18614.25037-1.60035.69334-.40152.44503-.59539 1.03943-.53345 1.63555.344 3.31056 1.47164 6.49166 3.28961 9.27986 1.64878 2.5904 3.84608 4.7872 6.43688 6.4356 2.7927 1.797 5.9636 2.9227 9.2644 3.289h.1778c.5409.0036 1.0626-.2 1.4581-.569.444-.406.6957-.9806.6935-1.5822v-3.1821c.0429-1.0763-.7171-2.0185-1.7782-2.2046z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+<div class="git-container">
+<a href="https://github.com/Harisshks" target="_blank">
+  <button class="git flex-center">
+    <svg
+      viewBox="0 0 20 20"
+      width="22px"
+      class="btn-svg"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      fill="#fff"
+      stroke="#fff"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        <title>github [#fff142]</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g
+          id="Page-1"
+          stroke="none"
+          stroke-width="1"
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <g
+            id="Dribbble-Light-Preview"
+            transform="translate(-140.000000, -7559.000000)"
+            fill="#fff"
+          >
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+              <path
+                d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                id="github-[#fff142]"
+              ></path>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </button>
+  </div>
+  <a class="socialContainer containerThree" href="https://www.linkedin.com/in/harissh-k-s-053a16274/" target="_blank">
+    <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg">
+      <path
+        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+      ></path>
+    </svg>
+  </a>
+    </div>
+</body>
+</html>
